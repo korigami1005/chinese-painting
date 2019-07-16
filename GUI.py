@@ -145,7 +145,7 @@ class issue():
 		global pred
 		file_path = '/Users/korigami/Desktop/0702/raw.jpg'
 		model_name = '98.h5'
-		#model_name = filedialog.askopenfilename()
+		model_name = filedialog.askopenfilename()
 		model = tf.contrib.keras.models.load_model(model_name)
 		local = './proper/'
 		jpgs = analysis_data.load_data(local)
